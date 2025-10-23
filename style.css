@@ -1,0 +1,139 @@
+body{
+    font-family: 'Roboto', serif;
+    padding: 20px;
+    
+}
+body ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.h{
+    display: flex;
+    gap: 50px;
+}
+nav button{
+    background-color: rgb(0, 100, 83);
+        font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    height: 45px;
+    width: 100px;   
+}
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;       
+}
+ nav a:hover{
+    color: grey;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+align-items: center;
+    border-radius: 8px;
+width: 380px;
+    background-color: white; 
+ 
+border-style: ridge;
+box-shadow: 10px 10px 4px rgb(0, 0, 0.3);
+font-weight: 400;
+}
+.new button{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: ridge;
+}
+.img{
+    background-color: rgba(0, 128, 0, 0.212);
+    border-radius: 15px;
+    width: 15px;
+
+}
+.e{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.e h1{
+    font-size: 50px;
+}
+.e h3{
+    font-weight: 200;
+    color: grey;
+}
+.c{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    height: 45px;
+    width: 100;
+    border-radius: 10px;
+    background-color:  rgb(0, 100, 83);
+    color: white;
+    align-self: center;
+     font-weight: 600;
+    font-size: 16px;
+}
+#menu {
+    display: none;
+    z-index: 2;
+}
+
+#menu div{
+    background-color: rgb(0, 100, 83) ;
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+    margin-top: 5px;   
+}
+.sidebar{
+    display: none;
+}
+@media(max-width:830px){
+    .h{
+        display: none;
+        padding: 10px;
+    }
+    .c{
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+     
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background: #333;
+      color: white;
+      position: fixed;
+      right: -250px; 
+      transition: left 0.3s ease;
+      top: 0;
+      display: block;
+    }
+    
+    .sidebar.active {
+       right: 0; 
+    }
+    .new{
+           flex-direction: column;
+    }
+}
